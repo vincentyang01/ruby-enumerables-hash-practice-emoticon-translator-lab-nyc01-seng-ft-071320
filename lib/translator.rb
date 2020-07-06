@@ -5,12 +5,12 @@ path = './lib/emoticons.yml'
 
 def load_library(path)
   emoticons = YAML.load_file(path)
-  newHash = {}
+  new_hash = {}
   emoticons.each do |key, value|
-    value.each do |englishEmoji, japaneseEmoji|
+    
     
     binding.pry
-    end
+    
   end
 end
 
