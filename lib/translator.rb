@@ -7,7 +7,19 @@ def load_library(path)
   emoticons = YAML.load_file(path)
   new_hash = {}
   emoticons.each do |key, value|
+    if !new_hash[key]
+      new_hash[key]
+    end
     
+    if !new_hash[key][:english]
+      new_hash[key][:english]
+    end
+    
+    if !new_hash[key][:japanese]
+      new_hash[key][:japanese]
+    end
+    
+    new_hash[key][:english]
     
     binding.pry
     
