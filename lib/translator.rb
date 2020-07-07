@@ -12,14 +12,15 @@ def load_library(path)
     end
     
     if !new_hash[key][:english]
-      new_hash[key][:english]
+      new_hash[key][:english] = {}
     end
     
     if !new_hash[key][:japanese]
-      new_hash[key][:japanese]
+      new_hash[key][:japanese] = {}
     end
     
-    new_hash[key][:english]
+    new_hash[key][:english] << value[0]
+    new_hash{key][:japanese] << value [1]
     
     binding.pry
     
