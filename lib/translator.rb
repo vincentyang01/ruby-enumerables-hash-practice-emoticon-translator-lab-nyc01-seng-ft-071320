@@ -19,8 +19,8 @@ def load_library(path)
       new_hash[key][:japanese] = {}
     end
     
-    new_hash[key][:english] << value[0].
-    new_hash{key][:japanese] << value [1]
+    new_hash[key][:english].push(value[0])
+    new_hash{key][:japanese].push(value[1])
     
     binding.pry
     
