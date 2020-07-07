@@ -8,7 +8,7 @@ def load_library(path)
   new_hash = {}
   emoticons.each do |key, value|
     if !new_hash[key]
-      new_hash[key]
+      new_hash[key] = {}
     end
     
     if !new_hash[key][:english]
